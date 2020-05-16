@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar{
@@ -10,6 +11,11 @@
     background-color: #f4f4f4;
     font-family: 'Lato', sans-serif;
     justify-content: space-between;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
 }
 
 #plantPic{
@@ -70,6 +76,48 @@
     font-size: 25px;
 }
 
+#main_text{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    align-self: center;
+}
+
+#main_text h1{
+    font-size: 34px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0px 10px 0px;
+}
+
+#main_text p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#card_section{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#card_section div{
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
+#card_section img{
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    display: block;
+    border: 0px solid black;
+    background-color: red;
+}
 
 /*********************/
 /*
