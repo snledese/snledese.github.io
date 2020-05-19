@@ -271,22 +271,24 @@
 }
 */
 /*ipad*/
-@media only screen (min-width: 600px) and (max-width: 768px){
 /*
+@media (min-width: 600px) and (max-width: 768px){
     .footer1{
         flex-direction: row;
     }
-*/
 }
+*/
 /*desktop*/
-@media only screen (min-width: 768px){
+@media (min-width: 768px){
     .footer1{
         flex-direction: row;
     }
     #first_image{
         background-attachment: fixed;
     }
+    
     .navbar{
+        display: flex;
         flex-direction: row;
     }
 }
