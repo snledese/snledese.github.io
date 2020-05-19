@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <!-- import the webpage's css -->
   <link rel="stlyesheet" href="reset.css">
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -177,6 +177,64 @@
     
     
     <script src="./script.js"></script>
+    
+    
+    <script>
+        window.sr = ScrollReveal();
+    
+//        sr.reveal('.secondSection-right #list4', {
+//          delay: 1500,
+//          duration: 2000,
+//          origin:'right',
+//          distance:'300px',
+//          viewFactor: 0.2
+//        });
+//      
+//        sr.reveal('#socialinfo h2, #socialinfo p', {
+//          delay: 700,
+//          duration: 1000,
+//          origin:'right',
+//          distance:'0px',
+//          viewFactor: 0.2
+//        });
+        
+        sr.reveal('#main_text h1, #main_text p', {
+          delay: 200,
+          duration: 1000,
+          origin:'right',
+          distance:'100px',
+          viewFactor: 0.2
+        });
+        
+//        sr.reveal('#main_text p', {
+//          delay: 500,
+//          duration: 2000,
+//          origin:'right',
+//          distance:'100px',
+//          viewFactor: 0.2
+//        });
+       
+    </script>
+    
+    
+    <script>
+    $(function() {
+      // Smooth Scrolling
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
+   
 </body>
 
 </html>
