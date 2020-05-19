@@ -272,9 +272,11 @@
 */
 /*ipad*/
 @media (min-width: 600px) and (max-width: 768px){
+/*
     .footer1{
         flex-direction: row;
     }
+*/
 }
 /*desktop*/
 @media (min-width: 768px){
