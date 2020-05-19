@@ -8,6 +8,7 @@
 
 body{
     overflow-x: hidden;
+    color: #444;
 }
 
 .navbar{
@@ -16,6 +17,7 @@ body{
     background-color: #f4f4f4;
     font-family: 'Lato', sans-serif;
     justify-content: space-between;
+    color: darkseagreen;
 }
 
 .main{
@@ -40,6 +42,7 @@ body{
     justify-content: center;
     align-items: center;
     color: darkseagreen;
+    padding-top: 5px;
 }
 
 .navbar_buttons{
@@ -106,7 +109,10 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding: 0;
+    margin: 10px 0px 20px 0px;
+    width: 95%;
+    justify-self: center;
+    align-self: center;
 }
 
 #card_section div{
@@ -168,7 +174,8 @@ body{
   content: "";
   right: 0;
   top: 0;
-  background: #000;
+/*  background: #000;*/
+  background: #444;
   transition: all 0.3s ease;
 }
 /*bottom line*/
@@ -196,7 +203,8 @@ body{
   content: "";
   left: 0;
   bottom: 0;
-  background: #000;
+/*  background: #000;*/
+  background: #444;
   transition: all 0.3s ease;
 }
 /*left line*/
@@ -252,7 +260,8 @@ body{
 .footOvertext{
     font-weight: 900;
     font-size: 17px;
-    color: black;
+/*    color: black;*/
+    color: #444;
 }
 
 .footSubtext{
@@ -309,6 +318,10 @@ body{
 
     .foot3{
         width: 66%;
+    }
+    
+    .left_navbar{
+        padding-top: 0px;
     }
     
 }
