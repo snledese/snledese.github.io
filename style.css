@@ -7,7 +7,7 @@
 
 .navbar{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #f4f4f4;
     font-family: 'Lato', sans-serif;
     justify-content: space-between;
@@ -19,13 +19,15 @@
 }
 
 #plantPic{
-    height: 65px;
+    width: 80px;
     margin: 0;
     padding: 0;
     display: flex;
-    border-radius: 30px;
+    border-radius: 90px;
     margin-left: 10px;
     margin-right: 10px;
+    transform: scale(0.94);
+/*    overflow: hidden;*/
 }
 
 .left_navbar{
@@ -53,7 +55,7 @@
 
     min-height: 500px;
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,7 +144,7 @@
 
 /**** BTN No. 3 ****/
 .btn-3 {
-  width: 100px;
+  width: 110px;
   height: 40px;
   line-height: 42px;
   padding: 0;
@@ -258,20 +260,31 @@
 }
 
 
+/*
 @media (min-width: 600px){
     .footer1{
         flex-direction: row;
-    } 
+    }
+    #first_image{
+        background-attachment: fixed;
+    }
 }
-
+*/
+/*ipad*/
 @media (min-width: 600px) and (max-width: 768px){
     .footer1{
         flex-direction: row;
     }
 }
-
+/*desktop*/
 @media (min-width: 768px){
     .footer1{
+        flex-direction: row;
+    }
+    #first_image{
+        background-attachment: fixed;
+    }
+    .navbar{
         flex-direction: row;
     }
 }
