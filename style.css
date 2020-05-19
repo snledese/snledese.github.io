@@ -216,31 +216,33 @@
 
 /**************************/
 
-
-
-
-
 .footer1{
     background: darkseagreen;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column-reverse;
-    padding-right: 0;
-    margin-right: 0;
-    border-right: 0;
+    padding: 12px 12px 12px 12px
+}
+
+.foot1, .foot2, .foot3{
+    padding: 5px 5px 5px 5px;
 }
 
 .foot1{
-    padding-left: 20px;
+    width: 100%;
+}
+
+.foot2{
+    width: 100%;
+}
+
+#facebook, #instagram, #twitter{
+    font-size: 30px;
+    color: white;
 }
 
 .foot3{
-    padding-left: 20px;
-    padding-right: 6px;
-}
-
-#footer_hours{
-    padding-left: 20px;
+    width: 100%;
 }
 
 .footOvertext{
@@ -254,12 +256,6 @@
     color: #000000;
     font-weight: lighter;
 }
-
-.footer2{
-    background: #778a93;
-    font-family: 'Montserrat', sans-serif;
-}
-
 
 /*
 @media (min-width: 600px){
@@ -281,9 +277,6 @@
 */
 /*desktop*/
 @media (min-width: 768px){
-    .footer1{
-        flex-direction: row;
-    }
     #first_image{
         background-attachment: fixed;
     }
@@ -292,4 +285,31 @@
         display: flex;
         flex-direction: row;
     }
+    
+    .footer1{
+        flex-direction: row;
+        padding: 12px 12px 12px 12px;
+    }
+    
+    .foot1, .foot2, .foot3{
+        padding: 0px 10px 0px 10px;
+    }
+    
+    .foot1{
+    width: 17%;
+    }
+
+    .foot2{
+        width: 17%;
+    }
+
+    .foot3{
+        width: 66%;
+    }
+    
+}
+
+
+#socialinfo{
+    background: red;
 }
