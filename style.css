@@ -56,34 +56,17 @@ body{
 }
 
 #first_image{
-    /* The image used */
-    background-image: url("images/plantPic2.jpg");
-
-    position: relative;
-
-    min-height: 500px;
-    /* Create the parallax scrolling effect */
-    background-attachment: inherit;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 10px;
 }
 
-
-#first_image_text{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    padding: 10px;
-    color: white;
-    font-size: 25px;
+#first_image img{
+    max-width: 95%;
+    max-height: auto;
+    border-radius: 50px 50px 50px 50px;
+    border: 5px solid darkseagreen;
 }
 
 #main_text{
@@ -101,6 +84,7 @@ body{
 
 #main_text p{
     font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 }
 
 #card_section{
@@ -108,17 +92,18 @@ body{
     flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
     margin: 10px 0px 20px 0px;
     width: 95%;
     justify-self: center;
     align-self: center;
+    border: 2px solid black;
+    padding: 13px;
 }
 
 #card_section div{
-    width: 25%;
-    margin: 0;
-    padding: 0;
+    width: 23.8%;
+    margin: 0px;
+    padding: 5px 0px 5px 0px;
 }
 
 #card_section img{
@@ -249,8 +234,9 @@ body{
 }
 
 #facebook, #instagram, #twitter{
-    font-size: 30px;
-    color: white;
+    font-size: 34px;
+/*    color: white;*/
+    color: #444
 }
 
 .foot3{
@@ -259,49 +245,58 @@ body{
 
 .footOvertext{
     font-weight: 900;
-    font-size: 17px;
+    font-size: 21px;
 /*    color: black;*/
     color: #444;
 }
 
 .footSubtext{
-    font-size: small;
+    font-size: 18px;
     color: #000000;
     font-weight: lighter;
 }
 
-/*
-@media (min-width: 600px){
-    .footer1{
-        flex-direction: row;
-    }
-    #first_image{
-        background-attachment: fixed;
-    }
-}
-*/
+
 /*ipad*/
-/*
 @media (min-width: 600px) and (max-width: 768px){
+/*
     .footer1{
         flex-direction: row;
     }
-}
 */
+}
+
 /*desktop*/
 @media (min-width: 768px){
     #first_image{
-        background-attachment: fixed;
+        
+    }
+    
+    #first_image img{
+        width: 80%;
     }
     
     .navbar{
         display: flex;
         flex-direction: row;
     }
+    #text_1 h1{
+        font-size: 36px;
+    }
+    #text_1 p{
+        font-size: 19px;
+    }
+    
+    #text_3 h1{
+        font-size: 36px;
+    }
+    #text_3 p{
+        font-size: 19px;
+    }
     
     .footer1{
         flex-direction: row;
-        padding: 12px 12px 12px 12px;
+        padding: 15px 14px 15px 14px;
     }
     
     .foot1, .foot2, .foot3{
@@ -323,5 +318,37 @@ body{
     .left_navbar{
         padding-top: 0px;
     }
-    
+    .footOvertext{
+        font-size: 23px;
+    }
+    #card_section{
+        width: 85%
+    }
+}
+
+@media (min-width: 900px){
+    #first_image{
+        
+    }
+    #first_image img{
+        width: 75%;
+    }
+}
+
+@media (min-width: 1000px){
+    #first_image{
+        
+    }
+    #first_image img{
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px){
+    #first_image{
+        
+    }
+    #first_image img{
+        width: 50%;
+    }
 }
